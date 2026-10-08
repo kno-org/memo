@@ -12,6 +12,7 @@ pub fn process_instruction(
     accounts: &[AccountInfo],
     input: &[u8],
 ) -> ProgramResult {
+    msg!("kno-org/memo localnet fork");
     let account_info_iter = &mut accounts.iter();
     let mut missing_required_signature = false;
     for account_info in account_info_iter {
